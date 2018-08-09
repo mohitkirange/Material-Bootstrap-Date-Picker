@@ -1,0 +1,200 @@
+* {
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #7b1fa2;
+}
+
+::selection {
+    color: #fff;
+    background: #7b1fa2;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #F5F5F5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+}
+
+
+.btn-primary {
+    background: #7b1fa2;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #fff;
+    background-color: #7b1fa2;
+    border-color: #7b1fa2;
+}
+
+
+.wrap .header-band {
+    background: #7b1fa2;
+    padding: 10px;
+}
+
+.wrap .container-fluid {
+    padding: 50px 15px 30px 15px;
+}
+
+.wrap .container-fluid .container {
+    background: #fff;
+    padding: 50px 15px 30px 15px;
+}
+
+.wrap .form-wrap .input-wrap {
+    padding: 0 10px 0 0;
+    margin-bottom: 15px;
+}
+
+.wrap .container-fluid .container .wrap-grid {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.wrap .container-fluid .container .table {}
+
+.wrap .container-fluid .container .table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    border-bottom: 3px solid #7b1fa2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #999;
+}
+
+
+.wrap .form-wrap .input-wrap {
+    margin-bottom: 35px;
+}
+
+.wrap .form-wrap p {
+    margin-bottom: 35px;
+}
+
+.input-wrap {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.input-wrap .input-element {
+    font-size: 14px;
+    color: #CDCDCD;
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #CDCDCD;
+    background: none;
+}
+
+.input-wrap .input-element:focus {
+    outline: none;
+}
+
+.input-wrap label {
+    color: #7b1fa2;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input-wrap .input-element:focus ~ label,
+.input-wrap .input-element:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #7b1fa2;
+}
+
+.input-element:focus ~ .bar:before,
+.input-element:focus ~ .bar:after {
+    width: 100%;
+}
+
+.input-element:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 1px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #3E50B4;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: auto;
+}
+
+.bar:after {
+    right: auto;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7b1fa2;
+    color: white;
+    text-align: center;
+}
+p {
+    margin: 5px 0px 5px 0;
+}
